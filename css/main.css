@@ -1,0 +1,93 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+:root {
+  --grey: #c0c0c0;
+  --p: "Noto Sans Saurashtra", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(117, 79, 80, 1) 100%);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headgif {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.25fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 2rem 4rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.mainimg {
+  grid-row: 1 / span 2;
+  width: 80vh;
+}
+
+.star {
+  grid-row: 2;
+  width: 10vh;
+  justify-self: center;
+}
+
+.textbox {
+  padding: 0rem 8rem;
+}
+
+p {
+  color: var(--grey);
+  font-family: var(--p);
+  line-height: 1.5rem;
+}
+
+.footgif {
+  display: grid;
+  padding: 2rem 4rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.footgif img {
+  width: 25%;
+  justify-self: center;
+  align-self: center;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+.headgif {
+grid-template-columns: 1fr;
+}
+
+.mainimg {
+  width: 40vh;
+}
+
+.star {
+  display: none;
+}
+
+.textbox {
+  padding: 4rem;
+}
+
+}
